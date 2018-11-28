@@ -1,0 +1,19 @@
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+# 删除每一行最后多余的空格
+trim_trailing_whitespace = true
+# 在代码最后插入一个空的换行
+insert_final_newline = true
+tab_width = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[Makefile]
+indent_style = tab

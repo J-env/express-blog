@@ -1,0 +1,38 @@
+<%- include('layout/header') %>
+<div class="ui grid">
+  <div class="four wide column"></div>
+  <div class="eight wide column">
+    <form class="ui form segment" method="post" enctype="multipart/form-data">
+      <div class="field required">
+        <label>用户名</label>
+        <input name="name" required minlength="1" maxlength="10" type="text" placeholder="用户名">
+      </div>
+      <div class="field required">
+        <label>密码</label>
+        <input name="password" required minlength="6" type="password" placeholder="密码">
+      </div>
+      <div class="field required">
+        <label>重复密码</label>
+        <input name="repassword" required minlength="6" type="password" placeholder="重复密码">
+      </div>
+      <div class="field required">
+        <label>性别</label>
+        <select class="ui compact selection dropdown" required name="gender">
+          <option value="f">女</option>
+          <option value="m">男</option>
+          <option value="x">保密</option>
+        </select>
+      </div>
+      <div class="field required">
+        <label>头像</label>
+        <input name="avatar" required type="file">
+      </div>
+      <div class="field required">
+        <label>个人简介</label>
+        <textarea name="bio" required minlength="1" maxlength="30" rows="5"></textarea>
+      </div>
+      <input type="submit" class="ui button fluid" value="注册">
+    </form>
+  </div>
+</div>
+<%- include('layout/footer') %>
