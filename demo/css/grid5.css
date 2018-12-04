@@ -1,0 +1,40 @@
+.grid-wrapper5 {
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: 200px 100px 200px;
+  grid-template-rows: 180px auto;
+  /* grid-column-gap: 10px;
+  grid-row-gap: 15px; */
+
+  grid-gap: 15px 10px;
+
+  /* justify-items: start; */
+  /* justify-items: center; */
+  /* justify-items: end; */
+  /* 默认值 */
+  justify-items: stretch;
+
+  /* align-items: start; */
+  /* align-items: center; */
+  /* align-items: end; */
+  /* 默认值 */
+  align-items: stretch;
+
+  /* justify-content: start; */
+  /* justify-content: end; */
+  justify-content: center;
+  /* justify-content: stretch; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+
+  /* align-content: start; */
+  /* align-content: end; */
+  align-content: center;
+  /* align-content: stretch; */
+  /* align-content: space-around; */
+  /* align-content: space-between; */
+  /* align-content: space-evenly; */
+}

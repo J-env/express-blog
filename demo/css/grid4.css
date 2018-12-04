@@ -1,0 +1,39 @@
+.grid-wrapper4 .grid-item1 {
+  grid-area: header;
+}
+
+.grid-wrapper4 .grid-item2 {
+  grid-area: main;
+}
+
+.grid-wrapper4 .grid-item3 {
+  grid-area: sidebar;
+}
+
+.grid-wrapper4 .grid-item4 {
+  grid-area: footer;
+}
+
+/* grid-template 不会重置 隐式 网格属性（grid-auto-columns， grid-auto-rows， 和 grid-auto-flow），
+这可能是你想在大多数情况下做的，建议使用 grid 属性而不是 grid-template */
+.grid-wrapper4 {
+  display: grid;
+  /* grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer"; */
+  /*
+  grid-template: none;
+  grid-template: subgrid;
+   */
+
+  /* grid-template:
+    "header header header" 25px "footer footer footer" 25px
+    / auto 50px auto; */
+
+  grid-template-rows: 25px 25px;
+  grid-template-columns: auto 50px auto;
+  grid-template-areas: "header header header" "footer footer footer";
+}
